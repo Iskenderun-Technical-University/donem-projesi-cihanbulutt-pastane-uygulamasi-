@@ -26,15 +26,39 @@ namespace Maliyet_Test
 
 
         }
+        void UrunListesi()
+        {
+            SqlDataAdapter da2 = new SqlDataAdapter("Select * from tblurunler", baglanti);
+            DataTable dt2 = new DataTable();
+            da2.Fill(dt2);
+            dataGridView1.DataSource = dt2;
+
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             MalzemeListe();
         }
-
+        
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnUrunListesi_Click(object sender, EventArgs e)
+        {
+            UrunListesi();
+        }
+
+        private void BtnMalzemeListesi_Click(object sender, EventArgs e)
+        {
+            MalzemeListe();
         }
     }
 }

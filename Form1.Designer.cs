@@ -69,8 +69,8 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BtnMalzemeListesi = new System.Windows.Forms.Button();
+            this.BtnUrunListesi = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
@@ -362,6 +362,7 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ürün Oluştur";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // button6
             // 
@@ -440,8 +441,8 @@
             // 
             this.groupBox5.Controls.Add(this.button9);
             this.groupBox5.Controls.Add(this.button8);
-            this.groupBox5.Controls.Add(this.button7);
-            this.groupBox5.Controls.Add(this.button5);
+            this.groupBox5.Controls.Add(this.BtnMalzemeListesi);
+            this.groupBox5.Controls.Add(this.BtnUrunListesi);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.Location = new System.Drawing.Point(904, 349);
             this.groupBox5.Name = "groupBox5";
@@ -468,23 +469,25 @@
             this.button8.Text = "Kasa";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // BtnMalzemeListesi
             // 
-            this.button7.Location = new System.Drawing.Point(12, 67);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(253, 35);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Malzeme Listesi";
-            this.button7.UseVisualStyleBackColor = true;
+            this.BtnMalzemeListesi.Location = new System.Drawing.Point(12, 67);
+            this.BtnMalzemeListesi.Name = "BtnMalzemeListesi";
+            this.BtnMalzemeListesi.Size = new System.Drawing.Size(253, 35);
+            this.BtnMalzemeListesi.TabIndex = 2;
+            this.BtnMalzemeListesi.Text = "Malzeme Listesi";
+            this.BtnMalzemeListesi.UseVisualStyleBackColor = true;
+            this.BtnMalzemeListesi.Click += new System.EventHandler(this.BtnMalzemeListesi_Click);
             // 
-            // button5
+            // BtnUrunListesi
             // 
-            this.button5.Location = new System.Drawing.Point(12, 25);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(253, 35);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Ürün Listesi";
-            this.button5.UseVisualStyleBackColor = true;
+            this.BtnUrunListesi.Location = new System.Drawing.Point(12, 25);
+            this.BtnUrunListesi.Name = "BtnUrunListesi";
+            this.BtnUrunListesi.Size = new System.Drawing.Size(253, 35);
+            this.BtnUrunListesi.TabIndex = 1;
+            this.BtnUrunListesi.Text = "Ürün Listesi";
+            this.BtnUrunListesi.UseVisualStyleBackColor = true;
+            this.BtnUrunListesi.Click += new System.EventHandler(this.BtnUrunListesi_Click);
             // 
             // groupBox6
             // 
@@ -580,8 +583,8 @@
         private Label label15;
         private GroupBox groupBox5;
         private Button button8;
-        private Button button7;
-        private Button button5;
+        private Button BtnMalzemeListesi;
+        private Button BtnUrunListesi;
         private Button button9;
         private GroupBox groupBox6;
         private ListBox listBox1;
