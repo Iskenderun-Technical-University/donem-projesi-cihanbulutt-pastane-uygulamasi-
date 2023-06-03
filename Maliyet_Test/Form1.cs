@@ -11,5 +11,10 @@ namespace Maliyet_Test
         {
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
