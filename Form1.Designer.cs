@@ -30,45 +30,45 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnMalzemeEkle = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtMalzemeNot = new System.Windows.Forms.TextBox();
+            this.TxtMalzemeFiyat = new System.Windows.Forms.TextBox();
+            this.TxtMalzemeStok = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtMalzemeAd = new System.Windows.Forms.TextBox();
+            this.TxtMalzemeId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnUrunGuncelle = new System.Windows.Forms.Button();
+            this.BtnUrunEkle = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TxtUrunSFıyat = new System.Windows.Forms.TextBox();
+            this.TxtUrunMFıyat = new System.Windows.Forms.TextBox();
+            this.TxtUrunStok = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.TxtUrunAd = new System.Windows.Forms.TextBox();
+            this.TxtUrunID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.CmbMalzemeler = new System.Windows.Forms.ComboBox();
+            this.CmbUrun = new System.Windows.Forms.ComboBox();
+            this.BtnUrunOlustur = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.TxtMalıyet = new System.Windows.Forms.TextBox();
+            this.TxtMıktar = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.BtnCikis = new System.Windows.Forms.Button();
+            this.BtnKasa = new System.Windows.Forms.Button();
             this.BtnMalzemeListesi = new System.Windows.Forms.Button();
             this.BtnUrunListesi = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -85,16 +85,16 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.BtnMalzemeEkle);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.TxtMalzemeNot);
+            this.groupBox1.Controls.Add(this.TxtMalzemeFiyat);
+            this.groupBox1.Controls.Add(this.TxtMalzemeStok);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TxtMalzemeAd);
+            this.groupBox1.Controls.Add(this.TxtMalzemeId);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(32, 21);
@@ -113,14 +113,15 @@
             this.button2.Text = "Getir";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // BtnMalzemeEkle
             // 
-            this.button1.Location = new System.Drawing.Point(83, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 47);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Malzeme Ekle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnMalzemeEkle.Location = new System.Drawing.Point(83, 231);
+            this.BtnMalzemeEkle.Name = "BtnMalzemeEkle";
+            this.BtnMalzemeEkle.Size = new System.Drawing.Size(133, 47);
+            this.BtnMalzemeEkle.TabIndex = 1;
+            this.BtnMalzemeEkle.Text = "Malzeme Ekle";
+            this.BtnMalzemeEkle.UseVisualStyleBackColor = true;
+            this.BtnMalzemeEkle.Click += new System.EventHandler(this.BtnMalzemeEkle_Click);
             // 
             // label5
             // 
@@ -149,26 +150,26 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "STOK:";
             // 
-            // textBox5
+            // TxtMalzemeNot
             // 
-            this.textBox5.Location = new System.Drawing.Point(83, 199);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(133, 26);
-            this.textBox5.TabIndex = 6;
+            this.TxtMalzemeNot.Location = new System.Drawing.Point(83, 199);
+            this.TxtMalzemeNot.Name = "TxtMalzemeNot";
+            this.TxtMalzemeNot.Size = new System.Drawing.Size(133, 26);
+            this.TxtMalzemeNot.TabIndex = 6;
             // 
-            // textBox4
+            // TxtMalzemeFiyat
             // 
-            this.textBox4.Location = new System.Drawing.Point(83, 158);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 26);
-            this.textBox4.TabIndex = 5;
+            this.TxtMalzemeFiyat.Location = new System.Drawing.Point(83, 158);
+            this.TxtMalzemeFiyat.Name = "TxtMalzemeFiyat";
+            this.TxtMalzemeFiyat.Size = new System.Drawing.Size(133, 26);
+            this.TxtMalzemeFiyat.TabIndex = 5;
             // 
-            // textBox3
+            // TxtMalzemeStok
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 116);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 26);
-            this.textBox3.TabIndex = 4;
+            this.TxtMalzemeStok.Location = new System.Drawing.Point(83, 116);
+            this.TxtMalzemeStok.Name = "TxtMalzemeStok";
+            this.TxtMalzemeStok.Size = new System.Drawing.Size(133, 26);
+            this.TxtMalzemeStok.TabIndex = 4;
             // 
             // label2
             // 
@@ -179,19 +180,19 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "AD:";
             // 
-            // textBox2
+            // TxtMalzemeAd
             // 
-            this.textBox2.Location = new System.Drawing.Point(83, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 26);
-            this.textBox2.TabIndex = 2;
+            this.TxtMalzemeAd.Location = new System.Drawing.Point(83, 71);
+            this.TxtMalzemeAd.Name = "TxtMalzemeAd";
+            this.TxtMalzemeAd.Size = new System.Drawing.Size(133, 26);
+            this.TxtMalzemeAd.TabIndex = 2;
             // 
-            // textBox1
+            // TxtMalzemeId
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 26);
-            this.textBox1.TabIndex = 1;
+            this.TxtMalzemeId.Location = new System.Drawing.Point(83, 25);
+            this.TxtMalzemeId.Name = "TxtMalzemeId";
+            this.TxtMalzemeId.Size = new System.Drawing.Size(133, 26);
+            this.TxtMalzemeId.TabIndex = 1;
             // 
             // label1
             // 
@@ -226,17 +227,17 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.BtnUrunGuncelle);
+            this.groupBox3.Controls.Add(this.BtnUrunEkle);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.TxtUrunSFıyat);
+            this.groupBox3.Controls.Add(this.TxtUrunMFıyat);
+            this.groupBox3.Controls.Add(this.TxtUrunStok);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.textBox10);
+            this.groupBox3.Controls.Add(this.TxtUrunAd);
+            this.groupBox3.Controls.Add(this.TxtUrunID);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(357, 21);
@@ -246,23 +247,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ürün Girişi";
             // 
-            // button3
+            // BtnUrunGuncelle
             // 
-            this.button3.Location = new System.Drawing.Point(100, 279);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 37);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Güncelle";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnUrunGuncelle.Location = new System.Drawing.Point(100, 279);
+            this.BtnUrunGuncelle.Name = "BtnUrunGuncelle";
+            this.BtnUrunGuncelle.Size = new System.Drawing.Size(133, 37);
+            this.BtnUrunGuncelle.TabIndex = 10;
+            this.BtnUrunGuncelle.Text = "Güncelle";
+            this.BtnUrunGuncelle.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // BtnUrunEkle
             // 
-            this.button4.Location = new System.Drawing.Point(100, 231);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 47);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Ürün Ekle";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnUrunEkle.Location = new System.Drawing.Point(100, 231);
+            this.BtnUrunEkle.Name = "BtnUrunEkle";
+            this.BtnUrunEkle.Size = new System.Drawing.Size(133, 47);
+            this.BtnUrunEkle.TabIndex = 1;
+            this.BtnUrunEkle.Text = "Ürün Ekle";
+            this.BtnUrunEkle.UseVisualStyleBackColor = true;
+            this.BtnUrunEkle.Click += new System.EventHandler(this.BtnUrunEkle_Click);
             // 
             // label6
             // 
@@ -291,26 +293,26 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "STOK:";
             // 
-            // textBox6
+            // TxtUrunSFıyat
             // 
-            this.textBox6.Location = new System.Drawing.Point(100, 199);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(133, 26);
-            this.textBox6.TabIndex = 6;
+            this.TxtUrunSFıyat.Location = new System.Drawing.Point(100, 199);
+            this.TxtUrunSFıyat.Name = "TxtUrunSFıyat";
+            this.TxtUrunSFıyat.Size = new System.Drawing.Size(133, 26);
+            this.TxtUrunSFıyat.TabIndex = 6;
             // 
-            // textBox7
+            // TxtUrunMFıyat
             // 
-            this.textBox7.Location = new System.Drawing.Point(100, 158);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(133, 26);
-            this.textBox7.TabIndex = 5;
+            this.TxtUrunMFıyat.Location = new System.Drawing.Point(100, 158);
+            this.TxtUrunMFıyat.Name = "TxtUrunMFıyat";
+            this.TxtUrunMFıyat.Size = new System.Drawing.Size(133, 26);
+            this.TxtUrunMFıyat.TabIndex = 5;
             // 
-            // textBox8
+            // TxtUrunStok
             // 
-            this.textBox8.Location = new System.Drawing.Point(100, 116);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(133, 26);
-            this.textBox8.TabIndex = 4;
+            this.TxtUrunStok.Location = new System.Drawing.Point(100, 116);
+            this.TxtUrunStok.Name = "TxtUrunStok";
+            this.TxtUrunStok.Size = new System.Drawing.Size(133, 26);
+            this.TxtUrunStok.TabIndex = 4;
             // 
             // label9
             // 
@@ -321,19 +323,19 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "AD:";
             // 
-            // textBox9
+            // TxtUrunAd
             // 
-            this.textBox9.Location = new System.Drawing.Point(100, 71);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(133, 26);
-            this.textBox9.TabIndex = 2;
+            this.TxtUrunAd.Location = new System.Drawing.Point(100, 71);
+            this.TxtUrunAd.Name = "TxtUrunAd";
+            this.TxtUrunAd.Size = new System.Drawing.Size(133, 26);
+            this.TxtUrunAd.TabIndex = 2;
             // 
-            // textBox10
+            // TxtUrunID
             // 
-            this.textBox10.Location = new System.Drawing.Point(100, 25);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(133, 26);
-            this.textBox10.TabIndex = 1;
+            this.TxtUrunID.Location = new System.Drawing.Point(100, 25);
+            this.TxtUrunID.Name = "TxtUrunID";
+            this.TxtUrunID.Size = new System.Drawing.Size(133, 26);
+            this.TxtUrunID.TabIndex = 1;
             // 
             // label10
             // 
@@ -346,32 +348,51 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button6);
+            this.groupBox4.Controls.Add(this.CmbMalzemeler);
+            this.groupBox4.Controls.Add(this.CmbUrun);
+            this.groupBox4.Controls.Add(this.BtnUrunOlustur);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.textBox12);
-            this.groupBox4.Controls.Add(this.textBox13);
+            this.groupBox4.Controls.Add(this.TxtMalıyet);
+            this.groupBox4.Controls.Add(this.TxtMıktar);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.textBox14);
-            this.groupBox4.Controls.Add(this.textBox15);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.Location = new System.Drawing.Point(622, 21);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(276, 322);
+            this.groupBox4.Size = new System.Drawing.Size(252, 322);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ürün Oluştur";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
-            // button6
+            // CmbMalzemeler
             // 
-            this.button6.Location = new System.Drawing.Point(101, 190);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(133, 35);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Ekle";
-            this.button6.UseVisualStyleBackColor = true;
+            this.CmbMalzemeler.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbMalzemeler.FormattingEnabled = true;
+            this.CmbMalzemeler.Location = new System.Drawing.Point(101, 68);
+            this.CmbMalzemeler.Name = "CmbMalzemeler";
+            this.CmbMalzemeler.Size = new System.Drawing.Size(133, 27);
+            this.CmbMalzemeler.TabIndex = 10;
+            // 
+            // CmbUrun
+            // 
+            this.CmbUrun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbUrun.FormattingEnabled = true;
+            this.CmbUrun.Location = new System.Drawing.Point(101, 24);
+            this.CmbUrun.Name = "CmbUrun";
+            this.CmbUrun.Size = new System.Drawing.Size(133, 27);
+            this.CmbUrun.TabIndex = 9;
+            // 
+            // BtnUrunOlustur
+            // 
+            this.BtnUrunOlustur.Location = new System.Drawing.Point(101, 190);
+            this.BtnUrunOlustur.Name = "BtnUrunOlustur";
+            this.BtnUrunOlustur.Size = new System.Drawing.Size(133, 35);
+            this.BtnUrunOlustur.TabIndex = 1;
+            this.BtnUrunOlustur.Text = "Ekle";
+            this.BtnUrunOlustur.UseVisualStyleBackColor = true;
+            this.BtnUrunOlustur.Click += new System.EventHandler(this.BtnUrunOlustur_Click);
             // 
             // label12
             // 
@@ -391,19 +412,20 @@
             this.label13.TabIndex = 7;
             this.label13.Text = "MİKTAR:";
             // 
-            // textBox12
+            // TxtMalıyet
             // 
-            this.textBox12.Location = new System.Drawing.Point(101, 158);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(133, 26);
-            this.textBox12.TabIndex = 5;
+            this.TxtMalıyet.Location = new System.Drawing.Point(101, 158);
+            this.TxtMalıyet.Name = "TxtMalıyet";
+            this.TxtMalıyet.Size = new System.Drawing.Size(133, 26);
+            this.TxtMalıyet.TabIndex = 5;
             // 
-            // textBox13
+            // TxtMıktar
             // 
-            this.textBox13.Location = new System.Drawing.Point(101, 116);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(133, 26);
-            this.textBox13.TabIndex = 4;
+            this.TxtMıktar.Location = new System.Drawing.Point(101, 116);
+            this.TxtMıktar.Name = "TxtMıktar";
+            this.TxtMıktar.Size = new System.Drawing.Size(133, 26);
+            this.TxtMıktar.TabIndex = 4;
+            this.TxtMıktar.TextChanged += new System.EventHandler(this.TxtMıktar_TextChanged);
             // 
             // label14
             // 
@@ -413,20 +435,6 @@
             this.label14.Size = new System.Drawing.Size(88, 19);
             this.label14.TabIndex = 3;
             this.label14.Text = "MALZEME:";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(101, 71);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(133, 26);
-            this.textBox14.TabIndex = 2;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(101, 25);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(133, 26);
-            this.textBox15.TabIndex = 1;
             // 
             // label15
             // 
@@ -439,8 +447,8 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.button9);
-            this.groupBox5.Controls.Add(this.button8);
+            this.groupBox5.Controls.Add(this.BtnCikis);
+            this.groupBox5.Controls.Add(this.BtnKasa);
             this.groupBox5.Controls.Add(this.BtnMalzemeListesi);
             this.groupBox5.Controls.Add(this.BtnUrunListesi);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
@@ -451,23 +459,24 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "İşlemler";
             // 
-            // button9
+            // BtnCikis
             // 
-            this.button9.Location = new System.Drawing.Point(12, 149);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(253, 35);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Çıkış";
-            this.button9.UseVisualStyleBackColor = true;
+            this.BtnCikis.Location = new System.Drawing.Point(12, 149);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(253, 35);
+            this.BtnCikis.TabIndex = 4;
+            this.BtnCikis.Text = "Çıkış";
+            this.BtnCikis.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // BtnKasa
             // 
-            this.button8.Location = new System.Drawing.Point(12, 108);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(253, 35);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Kasa";
-            this.button8.UseVisualStyleBackColor = true;
+            this.BtnKasa.Location = new System.Drawing.Point(12, 108);
+            this.BtnKasa.Name = "BtnKasa";
+            this.BtnKasa.Size = new System.Drawing.Size(253, 35);
+            this.BtnKasa.TabIndex = 3;
+            this.BtnKasa.Text = "Kasa";
+            this.BtnKasa.UseVisualStyleBackColor = true;
+            this.BtnKasa.Click += new System.EventHandler(this.BtnKasa_Click);
             // 
             // BtnMalzemeListesi
             // 
@@ -545,48 +554,48 @@
 
         private GroupBox groupBox1;
         private Button button2;
-        private Button button1;
+        private Button BtnMalzemeEkle;
         private Label label5;
         private Label label4;
         private Label label3;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private TextBox TxtMalzemeNot;
+        private TextBox TxtMalzemeFiyat;
+        private TextBox TxtMalzemeStok;
         private Label label2;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox TxtMalzemeAd;
+        private TextBox TxtMalzemeId;
         private Label label1;
         private GroupBox groupBox2;
         private DataGridView dataGridView1;
         private GroupBox groupBox3;
-        private Button button3;
-        private Button button4;
+        private Button BtnUrunGuncelle;
+        private Button BtnUrunEkle;
         private Label label6;
         private Label label7;
         private Label label8;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
+        private TextBox TxtUrunSFıyat;
+        private TextBox TxtUrunMFıyat;
+        private TextBox TxtUrunStok;
         private Label label9;
-        private TextBox textBox9;
-        private TextBox textBox10;
+        private TextBox TxtUrunAd;
+        private TextBox TxtUrunID;
         private Label label10;
         private GroupBox groupBox4;
-        private Button button6;
+        private Button BtnUrunOlustur;
         private Label label12;
         private Label label13;
-        private TextBox textBox12;
-        private TextBox textBox13;
+        private TextBox TxtMalıyet;
+        private TextBox TxtMıktar;
         private Label label14;
-        private TextBox textBox14;
-        private TextBox textBox15;
         private Label label15;
         private GroupBox groupBox5;
-        private Button button8;
+        private Button BtnKasa;
         private Button BtnMalzemeListesi;
         private Button BtnUrunListesi;
-        private Button button9;
+        private Button BtnCikis;
         private GroupBox groupBox6;
         private ListBox listBox1;
+        private ComboBox CmbMalzemeler;
+        private ComboBox CmbUrun;
     }
 }
