@@ -374,6 +374,7 @@
             this.CmbMalzemeler.Name = "CmbMalzemeler";
             this.CmbMalzemeler.Size = new System.Drawing.Size(133, 27);
             this.CmbMalzemeler.TabIndex = 10;
+            this.CmbMalzemeler.SelectedIndexChanged += new System.EventHandler(this.CmbMalzemeler_SelectedIndexChanged);
             // 
             // CmbUrun
             // 

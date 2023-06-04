@@ -154,7 +154,34 @@ namespace Maliyet_Test
 
         private void TxtMýktar_TextChanged(object sender, EventArgs e)
         {
+            double malýyet;
 
+            if(TxtMýktar.Text =="")
+            {
+                TxtMýktar.Text = "0";
+            }
+
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Select * From tblmalzemeler where Malzemeýd=@p1", baglanti);
+            komut.Parameters.AddWithValue("@p1", CmbMalzemeler.SelectedValue);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                TxtMalýyet.Text = dr[3].ToString();
+            }
+
+            baglanti.Close();
+
+            malýyet = Convert.ToDouble(TxtMalýyet.Text) / 1000 * Convert.ToDouble(TxtMýktar.Text);
+
+            TxtMalýyet.Text = malýyet.ToString();
+
+
+        }
+
+        private void CmbMalzemeler_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
