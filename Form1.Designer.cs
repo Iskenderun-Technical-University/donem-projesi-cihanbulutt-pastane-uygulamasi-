@@ -44,7 +44,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BtnUrunGuncelle = new System.Windows.Forms.Button();
             this.BtnUrunEkle = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -68,7 +67,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.BtnCikis = new System.Windows.Forms.Button();
-            this.BtnKasa = new System.Windows.Forms.Button();
             this.BtnMalzemeListesi = new System.Windows.Forms.Button();
             this.BtnUrunListesi = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -224,10 +222,10 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(859, 171);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnUrunGuncelle);
             this.groupBox3.Controls.Add(this.BtnUrunEkle);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label7);
@@ -246,15 +244,6 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ürün Girişi";
-            // 
-            // BtnUrunGuncelle
-            // 
-            this.BtnUrunGuncelle.Location = new System.Drawing.Point(100, 279);
-            this.BtnUrunGuncelle.Name = "BtnUrunGuncelle";
-            this.BtnUrunGuncelle.Size = new System.Drawing.Size(133, 37);
-            this.BtnUrunGuncelle.TabIndex = 10;
-            this.BtnUrunGuncelle.Text = "Güncelle";
-            this.BtnUrunGuncelle.UseVisualStyleBackColor = true;
             // 
             // BtnUrunEkle
             // 
@@ -449,7 +438,6 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.BtnCikis);
-            this.groupBox5.Controls.Add(this.BtnKasa);
             this.groupBox5.Controls.Add(this.BtnMalzemeListesi);
             this.groupBox5.Controls.Add(this.BtnUrunListesi);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
@@ -462,22 +450,12 @@
             // 
             // BtnCikis
             // 
-            this.BtnCikis.Location = new System.Drawing.Point(12, 149);
+            this.BtnCikis.Location = new System.Drawing.Point(12, 108);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(253, 35);
             this.BtnCikis.TabIndex = 4;
             this.BtnCikis.Text = "Çıkış";
             this.BtnCikis.UseVisualStyleBackColor = true;
-            // 
-            // BtnKasa
-            // 
-            this.BtnKasa.Location = new System.Drawing.Point(12, 108);
-            this.BtnKasa.Name = "BtnKasa";
-            this.BtnKasa.Size = new System.Drawing.Size(253, 35);
-            this.BtnKasa.TabIndex = 3;
-            this.BtnKasa.Text = "Kasa";
-            this.BtnKasa.UseVisualStyleBackColor = true;
-            this.BtnKasa.Click += new System.EventHandler(this.BtnKasa_Click);
             // 
             // BtnMalzemeListesi
             // 
@@ -569,7 +547,6 @@
         private GroupBox groupBox2;
         private DataGridView dataGridView1;
         private GroupBox groupBox3;
-        private Button BtnUrunGuncelle;
         private Button BtnUrunEkle;
         private Label label6;
         private Label label7;
@@ -590,7 +567,6 @@
         private Label label14;
         private Label label15;
         private GroupBox groupBox5;
-        private Button BtnKasa;
         private Button BtnMalzemeListesi;
         private Button BtnUrunListesi;
         private Button BtnCikis;

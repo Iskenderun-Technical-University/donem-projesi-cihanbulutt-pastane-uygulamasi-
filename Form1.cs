@@ -26,7 +26,6 @@ namespace Maliyet_Test
             da.Fill(dt);
             dataGridView1.DataSource = dt;
 
-
         }
         void UrunListesi()
         {
@@ -34,7 +33,6 @@ namespace Maliyet_Test
             DataTable dt2 = new DataTable();
             da2.Fill(dt2);
             dataGridView1.DataSource = dt2;
-
 
         }
         void Kasa()
@@ -54,9 +52,6 @@ namespace Maliyet_Test
             CmbUrun.ValueMember = "URUNID";
             CmbUrun.DisplayMember = "AD";
             CmbUrun.DataSource = dt;
-
-
-          
             baglanti.Close();
         }
         
@@ -74,7 +69,6 @@ namespace Maliyet_Test
 
             baglanti.Close();
         }
-        
         private void Form1_Load(object sender, EventArgs e)
         {
             MalzemeListe();
@@ -83,32 +77,26 @@ namespace Maliyet_Test
 
             Malzemeler();
         }
-
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-
         private void groupBox4_Enter(object sender, EventArgs e)
         {
 
         }
-
         private void BtnUrunListesi_Click(object sender, EventArgs e)
         {
             UrunListesi();
         }
-
         private void BtnMalzemeListesi_Click(object sender, EventArgs e)
         {
             MalzemeListe();
         }
-
         private void BtnKasa_Click(object sender, EventArgs e)
         {
             Kasa();
         }
-
         private void BtnMalzemeEkle_Click(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -122,7 +110,6 @@ namespace Maliyet_Test
             MessageBox.Show("Malzeme Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             MalzemeListe();
         }
-
         private void BtnUrunEkle_Click(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -132,9 +119,7 @@ namespace Maliyet_Test
             baglanti.Close();
             MessageBox.Show("Ürün Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             UrunListesi();
-
         }
-
         private void BtnUrunOlustur_Click(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -147,11 +132,8 @@ namespace Maliyet_Test
             baglanti.Close();
             MessageBox.Show("Malzeme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                
-
-
+            listBox1.Items.Add(CmbMalzemeler.Text + " - " + TxtMalýyet.Text);
         }
-
         private void TxtMýktar_TextChanged(object sender, EventArgs e)
         {
             double malýyet;
@@ -169,19 +151,33 @@ namespace Maliyet_Test
             {
                 TxtMalýyet.Text = dr[3].ToString();
             }
-
             baglanti.Close();
 
             malýyet = Convert.ToDouble(TxtMalýyet.Text) / 1000 * Convert.ToDouble(TxtMýktar.Text);
 
             TxtMalýyet.Text = malýyet.ToString();
-
-
         }
-
         private void CmbMalzemeler_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+
+            TxtUrunID.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            TxtUrunAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Select sum(Malýyet) from tblfýrýn where urunýd=@p1", baglanti);
+            komut.Parameters.AddWithValue("@p1", TxtUrunID.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                TxtUrunMFýyat.Text = dr[0].ToString();
+            }
+            baglanti.Close();
+
         }
     }
 }
